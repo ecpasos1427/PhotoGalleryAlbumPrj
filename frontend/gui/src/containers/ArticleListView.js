@@ -31,7 +31,7 @@ class ArticleListView extends React.Component {
   }
 
   render() {
-    return <Articles data={listData} />;
+    return <Articles data={this.state.articles} />;
   }
 }
 
