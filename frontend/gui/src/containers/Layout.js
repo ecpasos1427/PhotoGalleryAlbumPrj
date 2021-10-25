@@ -1,5 +1,8 @@
 import React from "react";
 import { Layout, Menu, Breadcrumb } from "antd";
+
+import { Link } from "react-router-dom";
+
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -52,8 +55,12 @@ export default class CustomLayout extends React.Component {
           <Header className="site-layout-background" style={{ padding: 0 }} />
           <Content style={{ margin: "0 16px" }}>
             <Breadcrumb style={{ margin: "16px 0" }}>
-              <Breadcrumb.Item>User</Breadcrumb.Item>
-              <Breadcrumb.Item>Bill</Breadcrumb.Item>
+              <Breadcrumb.Item>
+                <Link to="/">Home</Link>
+              </Breadcrumb.Item>
+              <Breadcrumb.Item>
+                <Link to="/">Articles</Link>
+              </Breadcrumb.Item>
             </Breadcrumb>
             <div
               className="site-layout-background"
@@ -62,9 +69,7 @@ export default class CustomLayout extends React.Component {
               {this.props.children}
             </div>
           </Content>
-          <Footer style={{ textAlign: "center" }}>
-            Ant Design ©2018 Created by Ant UED
-          </Footer>
+          <Footer style={{ textAlign: "center" }}>Evimeria ©2021</Footer>
         </Layout>
       </Layout>
     );
