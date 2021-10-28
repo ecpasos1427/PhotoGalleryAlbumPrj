@@ -1,2 +1,8 @@
 photogalleryalbumbe/photogalleryalbumbe/__pycache__
 frontend/gui/node_modules
+articles/__pycache__
+articles/api/__pycache__
+articles/migrations/__pycache__
+build
+node_modules
+photogalleryalbum/__pycache__
