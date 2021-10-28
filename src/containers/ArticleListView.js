@@ -9,7 +9,10 @@ class ArticleListView extends React.Component {
   };
 
   componentDidMount() {
-    axios.get("http://127.0.0.1:8000/api/").then((res) => {
+    // https://digitalassetmanager.herokuapp.com/
+    // http://127.0.0.1:8000/api/
+
+    axios.get("https://digitalassetmanager.herokuapp.com/api/").then((res) => {
       this.setState({
         articles: res.data,
       });
