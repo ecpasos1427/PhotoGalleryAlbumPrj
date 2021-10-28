@@ -7,6 +7,7 @@ backend/src/articles/migrations/__pycache__
 articles/__pycache__
 articles/api/__pycache__
 articles/migrations/__pycache__
+node_modules
 build
 photogalleryalbum/__pycache__
-node_modules
+
