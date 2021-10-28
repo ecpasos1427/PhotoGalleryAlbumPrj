@@ -1,4 +1,4 @@
-"""photogalleryalbumbe URL Configuration
+"""photogalleryalbum URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -14,8 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include, re_path
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('api-auth/', include('rest_framework.urls')),
+
+    path('api/', include('articles.api.urls')),
+
+    re_path('.*', TemplateView.as_view(template_name='index.html')),
 ]
