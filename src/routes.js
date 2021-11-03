@@ -4,13 +4,13 @@ import { Route } from "react-router-dom";
 
 import ArticleListView from "./containers/ArticleListView";
 import ArticleDetailView from "./containers/ArticleDetailView";
-import WelcomeView from "./containers/WelcomeView";
+import WelcomeConstructionView from "./containers/WelcomeConstructionView";
 
 const BaseRouter = () => (
   <div>
-    <Route exact path="/" component={WelcomeView} />
+    <Route exact path="/" component={WelcomeConstructionView} />
     <Route exact path="/articles/" component={ArticleListView} />
-    <Route exact path="/articles/:articleID" component={ArticleDetailView} />
+    <Route exact path="/article/:articleID" component={ArticleDetailView} />
   </div>
 );
 
